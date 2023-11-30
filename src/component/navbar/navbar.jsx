@@ -1,23 +1,36 @@
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useRef, useState, useEffect } from "react";
 import "./navbar.scss";
 import Hamburger from "./hamburger";
+// import { type } from "@testing-library/user-event/dist/type";
+// import { click } from "@testing-library/user-event/dist/click";
 const Navbar = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isContactOpen, setContactOpen] = useState(false);
+  // const [isMenuOpen, setMenuOpen] = useState(false);
+  // const [isContactOpen, setContactOpen] = useState(false);
 
-  const handleMenuToggle = () => {
-    setMenuOpen(!isMenuOpen);
-  };
+  // const handleContactToggle = () => {
+  //   setContactOpen(!isContactOpen);
+  // };
 
-  const handleContactToggle = () => {
-    setContactOpen(!isContactOpen);
-  };
   const [isHamburgerOpen, setHamburgerOpen] = useState(false);
+
   const hamburgerRef = useRef(null);
 
   const handleHamburgerTrigger = useCallback((e) => {
     e.stopPropagation();
     setHamburgerOpen((value) => !value);
+  }, []);
+
+  useEffect(() => {
+    const closeHamburger = (e) => {
+      if (hamburgerRef.current && !hamburgerRef.current.contains(e.target)) {
+        setHamburgerOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeHamburger);
+
+    return () => {
+      document.body.removeEventListener("click", closeHamburger);
+    };
   }, []);
 
   return (

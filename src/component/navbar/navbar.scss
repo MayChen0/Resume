@@ -17,8 +17,7 @@
 
     @include mobile {
         width:100%;
-        height: 45px;
-        
+        height: 45px;       
         color: #B0D9B2;
         &::after {
             position: relative;
@@ -30,6 +29,7 @@
             height: 45px;
             z-index: 1;
         }
+        
     }
 
     .hamburger {
@@ -50,10 +50,12 @@
 
         @include mobile {
             &:checked + .mainNav {
-                transform: translateY(40px);
+                transform: translateX(0%);
             }
+            
         }
     }
+    
 
     .mainNav {
         display: flex;
@@ -63,12 +65,14 @@
         
         transition: 0.3s;
         margin: auto 0;
+        
 
-        @include mobile {           
-            transform: translateY(-110%);
+        @include mobile { 
+            top: 45px;         
+            transform: translateX(calc(100% + 10px));
             background-color: #fff;
             box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.17);
-            width: 250px;
+            width: 220px;
             padding: 0px 15px;
             z-index: -1;
             position: absolute;
