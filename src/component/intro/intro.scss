@@ -1,0 +1,10 @@
+@import '../../css/_variable';
+@import '../../css/_mixin';
+@import '../../css/_extend';
+
+.intro{
+    &__profilepicture{
+        width: 437px;
+        height: 548px;
+    }
+}
