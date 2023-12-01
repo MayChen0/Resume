@@ -2,9 +2,29 @@
 @import '../../css/_mixin';
 @import '../../css/_extend';
 
+$imgWidth: 340px;
+
 .intro{
+    margin: 45px 250px 0 50px;
+    display: flex;
+    height: (calc(100vh - 45px));
     &__profilepicture{
-        width: 437px;
-        height: 548px;
+        display: flex;
+        justify-content:center;
+        width: 50%;
+        height: 100%;
+        
+        &__image{
+            margin: auto 0;
+            width: $imgWidth;
+            height: (calc(3344 * $imgWidth / 2756));
+        }
+        
+    }
+    &__text{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
