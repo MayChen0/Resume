@@ -1,15 +1,31 @@
 
+@mixin pc-sm{
+    @media  screen and (max-width: $pc-sm-media) {
+        @content
+        }
+};
+@mixin pad-lg{
+    @media  screen and (max-width: $pad-lg-media) {
+        @content
+        }
+};
 
-@mixin pad{
-    @media  screen and (max-width: $padWidth) {
+@mixin pad-md{
+    @media  screen and (max-width: $pad-md-media) {
         @content
     }
     
 };
    
 
-@mixin mobile{
-    @media  screen and (max-width: $mobileWidth) {
+@mixin pad-sm{
+    @media  screen and (max-width: $pad-sm-media) {
+        @content
+        }
+};
+
+@mixin phone-md{
+    @media  screen and (max-width: $phone-md-media) {
         @content
         }
 };

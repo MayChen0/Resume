@@ -2,35 +2,81 @@
 @import '../../css/_mixin';
 @import '../../css/_extend';
 
-$imgWidth: 340px;
+$imgWidth-lg: 340px;
+$imgWidth-sm: 290px;
+$imgWidth-horizonal-lg:630px;
+$imgWidth-horizonal-sm:530px;
 
 .intro{
     margin: 45px 250px 0 50px;
     display: flex;
     height: (calc(100vh - 45px));
+    @include pc-sm{
+        margin: 45px 200px 0 50px;
+    }
+    @include pad-lg{
+        flex-direction: column;
+        height:auto;
+        
+    }
+    @include pad-sm{
+        margin: 45px 50px 0;
+    }
+    @include phone-md{
+        margin: 45px 20px 0;
+    }
     &__profilepicture{
         display: flex;
         justify-content:center;
         width: 50%;
         height: 100%;
         position: relative;
+        @include pad-lg{
+            width: 100%;       
+            height:auto;
+            margin-top: 100px;
+            
+        }
+        @include pad-sm{
+            margin-top: 50px;
+        }
         &::before{  
             position: absolute;  
             top: 50%;
             transform: translate(0, -50%); 
             content: '';
-            width: $imgWidth;
-            height: (calc(3344 * $imgWidth / 2756));
-            position: absolute;
-            box-shadow:10px 10px 12px rgba(0, 0, 0, .25) inset;
+            width: $imgWidth-lg;
+            height: (calc(3344 * $imgWidth-lg / 2756));
+            box-shadow:$shadow-inset;
             z-index: 2;
+            @include pc-sm{
+                width: $imgWidth-sm;
+                height: (calc(3344 * $imgWidth-sm / 2756));
+            }
+            @include pad-lg{
+                display: none;
+            }
         }
+        
         
         
         &__image{
             margin: auto 0;
-            width: $imgWidth;
-            height: (calc(3344 * $imgWidth / 2756));
+            width: $imgWidth-lg;
+            height: (calc(3344 * $imgWidth-lg / 2756));
+            @include pc-sm{
+                width: $imgWidth-sm;
+                height: (calc(3344 * $imgWidth-sm / 2756));
+            }
+            @include pad-lg{
+                width: $imgWidth-horizonal-lg;
+                height: (calc(3098 * $imgWidth-horizonal-lg / 5815));
+                
+            }
+            @include pad-md{
+                width: $imgWidth-horizonal-sm;
+                height: (calc(3098 * $imgWidth-horizonal-sm / 5815));
+            }
             
 
         }
@@ -44,15 +90,36 @@ $imgWidth: 340px;
         font-family: $font-stack;
         justify-content: center;
         margin: auto 20px auto 0;
+        @include pad-lg{
+            width: 100%;       
+            height:auto;
+            padding-top: 30px ;
+            
+        }
+
+        @include pad-sm{
+            margin-right: 0;
+        }
+            
+
 
         h2{
             font-size: $font-size-h1-40;
             height: 80px;
             margin: 0;
+            @include pad-lg{
+                padding: 0 20px;
+            }
+            @include pad-sm{
+                font-size:$font-size-h3-32;
+            }
         }
 
         p{
-            font-size:$font-size-body-16; 
+            font-size:$font-size-body-16;
+            @include pad-lg{
+                padding: 0 20px;
+            } 
         }
         &__cvDownloadContainer{
             display: flex;
@@ -63,7 +130,7 @@ $imgWidth: 340px;
             width: 85px;
             height: 35px;
             border-radius: 17.5px;
-            background: $mainGreen;
+            background: $color-mainGreen;
         
             position: relative;
             float: right;

@@ -1,16 +1,31 @@
-$color-white: #ffffff;
+
 $padWidth: 992px;
 $mobileWidth: 768px ;  
 $hoverShadow:2px 3px 2.5px rgba(0, 0, 0, 0.3);
 $backgroundBlack: rgba(0,0,0,0.9);
 
+// breakpoint media setting
+$pc-lg-media: 1920px;
+$pc-md-media: 1440px;
+$pc-sm-media: 1280px;
+$pad-lg-media: 1024px;
+$pad-md-media: 960px;
+$pad-sm-media: 768px;
+$phone-lg-media: 600px;
+$phone-md-media: 480px;
+$phone-sm-media: 400px;
+$phone-xs-media: 320px;
+
 
 // shadow
 $hoverShadow:2px 3px 2.5px rgba(0, 0, 0, 0.3);
 $shadow-button: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
+$shadow-inset:10px 10px 12px rgba(0, 0, 0, .25) inset;
+$shadow-bar:0px 5px 8px rgba(0, 0, 0, 0.17);
 
 // color
-$mainGreen: #B0D9B2;
+$color-white: #ffffff;
+$color-mainGreen: #B0D9B2;
 
 // grey color
 $color-grey-scale: #000000;
