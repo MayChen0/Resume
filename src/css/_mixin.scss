@@ -23,9 +23,24 @@
         @content
         }
 };
+@mixin phone-lg{
+    @media  screen and (max-width: $phone-lg-media) {
+        @content
+        }
+};
 
 @mixin phone-md{
     @media  screen and (max-width: $phone-md-media) {
+        @content
+        }
+};
+@mixin phone-sm{
+    @media  screen and (max-width: $phone-sm-media) {
+        @content
+        }
+};
+@mixin phone-xs{
+    @media  screen and (max-width: $phone-xs-media) {
         @content
         }
 };

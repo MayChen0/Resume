@@ -14,6 +14,9 @@
         margin: 0 auto;
         & h1{
             @extend %font-title;
+            @include phone-md{
+                letter-spacing: 9px;
+            }
         }
     }
     &__select{
@@ -22,11 +25,22 @@
         display: flex;
         justify-content: center;
         position: relative;
+        @include pad-sm{
+            margin:30px auto 0;
+        }
+        
         
         
         & h5{
             margin: 20px 40px;
             @extend %font-button;
+            @include pad-md{
+                margin: 20px 30px;
+                font-size: $font-size-h6-16
+            }
+            @include phone-md{
+                margin: 20px 15px;
+            }
             &:first-child::after{
                 content: "";
                 background-color: $color-grey-scale2;
@@ -35,7 +49,12 @@
                 bottom: 33%;
                 position: absolute;
                 transform: translateX(38px);
-               z-index: 1;
+                z-index: 1;
+                @include phone-md{
+                transform: translateX(10px);
+                width: 1.5px;
+            }
+            
                
             }
     
@@ -50,22 +69,33 @@
         width: 100%;
         display: flex;
         height: fit-content;
-        &__line{
-            width: 2px;
-            height: 100%;
-            background-color: $color-grey-scale5;
-            
-            
-        }
+
 
         &__section{
             display: flex;
                 flex-direction: column;
-                
                 left: 30%;
                 height: fit-content;
                 margin-top: 40px;
                 position: relative;
+                @include pc-sm{
+                    left: 25%;
+                }
+                @include pad-lg{
+                    left: 20%;
+                }
+                @include pad-md{
+                    left: 15%;
+                }
+                @include pad-sm{
+                    left: 20%;;
+                }
+                @include phone-lg{
+                    left: 10%;
+                }
+                @include phone-xs{
+                    left: 5%;
+                }
 
             &__container{
                 
@@ -90,6 +120,12 @@
                     transform: translate(-50px,0);
                     
                     background-color: $color-grey-scale5;
+                    @include phone-lg{
+                        transform:translate(-35px,0);
+                    }
+                    @include phone-xs{
+                        display: none;
+                    }
   
                 }
                 
@@ -107,6 +143,25 @@
                     padding: 10px 20px;
                     border-radius: 7px;
                     max-width: 500px;
+                    
+                    
+                    @include pad-md{
+                        max-width: 430px; 
+                    }
+                    @include pad-sm{
+                        background-color: $color-grey-scale9;
+                    }
+
+                    @include phone-lg{
+                        max-width: 390px;
+                    }
+
+                    @include phone-md{
+                        max-width: 350px;
+                    }
+                    @include phone-sm{
+                        max-width: 320px;
+                    }
 
                     
                     
@@ -114,12 +169,26 @@
                         box-shadow: $shadow-timeline;
                         transition: box-shadow 0.2s ease-in-out;
                     }
+                    &.education{
+                        @include pad-sm{
+                            background-color: $color-white;
+                        }
+                    }
 
                     &.education:hover {
                         box-shadow:none;
                     }
+                    .discription{
+                        margin-top: 15px;
+                        font-size:$font-size-subtitle ;
+                        text-align:justify;
+                    }
+                    & img{
+                        margin-top: 10px;
+                    }
                     & p{
                         @extend %font-body;
+                       
                     }    
                     &.hidden {
                         display: none;
@@ -136,6 +205,14 @@
                         z-index: 1;
                         box-shadow: $shadow-button;
                         border-radius: 2px;
+                        @include phone-lg{
+                            transform:translate(-60px,15px);
+                            width: 12px;
+                            
+                        }
+                        @include phone-xs{
+                            display: none;
+                        }
                       }
                       &.intern::before{
                         background-color:$color-mainGreen;

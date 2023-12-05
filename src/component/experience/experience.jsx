@@ -54,7 +54,7 @@ const TimelineItem = ({
         <p>{company}</p>
         <p>{position}</p>
         <img src={src} srcSet={srcSet} />
-        <p>{discription}</p>
+        <p className="discription">{discription}</p>
       </div>
     </div>
   );

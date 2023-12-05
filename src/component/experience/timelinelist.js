@@ -25,7 +25,7 @@ const TimelineList = [
     },
     {category:"intern",
       year: "2022-2023",
-      location: "Taipei",
+      location: "Taipei Taiwan",
       company: "Deep Wave Company",
       position: "Front-end Engineer Intern",
       discription: "Over the past year, I transitioned from a design background to a Front-end Engineering intern. Combining my design expertise with guidance from the company and self-directed learning in front-end programming, I actively participated in web development projects from a front-end engineer's perspective. During the internship, I played a pivotal role in assisting the development of the company's website.",

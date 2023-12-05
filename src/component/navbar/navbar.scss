@@ -77,6 +77,10 @@
 
         a {
             @extend %navWord;
+            @include pad-md{
+                padding-right: 45px;
+            }
+            
 
             &:hover {
                 text-shadow: $hoverShadow;
@@ -90,6 +94,9 @@
                 width: 55px;
                 height: 1.5px;
                 right: 0;
+                @include pad-md{
+                    width: 40px;
+                }
 
                 @include pad-sm{
                     opacity:0;
