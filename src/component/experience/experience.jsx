@@ -16,6 +16,10 @@ const TimelineItem = ({
   const [alternativeTimelineText, setAlternativeTimelineText] = useState(false);
 
   const handleClick = () => {
+    if (category === "education") {
+      return;
+    }
+
     setAlternativeTimelineText(!alternativeTimelineText);
   };
 
