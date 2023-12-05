@@ -1,0 +1,142 @@
+@import '../../css/_variable';
+@import '../../css/_mixin';
+@import '../../css/_extend';
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    height: fit-content;
+    
+    
+
+    &__title{
+        margin: 0 auto;
+        & h1{
+            @extend %font-title;
+        }
+    }
+    &__select{
+        margin-top: 30px;
+        margin-right: 200px;
+        display: flex;
+        justify-content: center;
+        & h5{
+            margin: 20px 40px;
+            @extend %font-button;
+    
+        }
+
+        & h5:hover {
+            text-shadow: $hoverShadow;
+        }
+     }  
+     &__timeline{       
+        position: relative;
+        width: 100%;
+        display: flex;
+        height: fit-content;
+        &__line{
+            width: 2px;
+            height: 100%;
+            background-color: $color-grey-scale5;
+            
+            
+        }
+
+        &__section{
+            display: flex;
+                flex-direction: column;
+                
+                left: 30%;
+                height: fit-content;
+                margin-top: 40px;
+                position: relative;
+
+            &__container{
+                
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                &.hidden{
+                    display: none;
+                }
+                
+                &.last::before{
+                    display: none;
+                }
+                
+                &.show::before{
+
+                    content: "";
+                    width: 3px;
+                    position: absolute;
+                    top: 40px;
+                    bottom:-40px;
+                    transform: translate(-50px,0);
+                    
+                    background-color: $color-grey-scale5;
+  
+                }
+                
+
+                
+                
+    
+
+                &__text,&__text__change{
+                    margin-bottom: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    width: fit-content;
+                    height: fit-content;
+                    padding: 10px 20px;
+                    border-radius: 7px;
+                    max-width: 500px;
+                    
+                    &:hover {
+                        box-shadow: $shadow-timeline;
+                        transition: box-shadow 0.2s ease-in-out;
+                    }
+                    & p{
+                        @extend %font-body;
+                    }    
+                    &.hidden {
+                        display: none;
+                      }
+
+                      
+
+                      &::before{
+                        content: "";
+                        width: 17px;
+                        height: 30px;
+                        position: absolute;
+                        transform: translate(-77px,15px);
+                        z-index: 1;
+                        box-shadow: $shadow-button;
+                        border-radius: 2px;
+                      }
+                      &.intern::before{
+                        background-color:$color-mainGreen;
+                      }
+                      &.activity::before{
+                        background-color:$color-grey-scale3;
+                      }
+                      &.education::before{
+                        background-color:$color-grey-scale9;
+                      }
+                }
+    
+                &__text__change{                   
+                    width: 500px;
+                    background-color: $color-grey-scale9;
+                }
+            }
+        }
+
+        
+
+     } 
+}
+

@@ -1,7 +1,5 @@
+ 
 
-$padWidth: 992px;
-$mobileWidth: 768px ;  
-$hoverShadow:2px 3px 2.5px rgba(0, 0, 0, 0.3);
 $backgroundBlack: rgba(0,0,0,0.9);
 
 // breakpoint media setting
@@ -22,9 +20,10 @@ $hoverShadow:2px 3px 2.5px rgba(0, 0, 0, 0.3);
 $shadow-button: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
 $shadow-inset:10px 10px 12px rgba(0, 0, 0, .25) inset;
 $shadow-bar:0px 5px 8px rgba(0, 0, 0, 0.17);
+$shadow-timeline:1px 1px 8px 2px rgba(0, 0, 0, 0.17);
 
 // color
-$color-white: #ffffff;
+$color-white: #ffffff; 
 $color-mainGreen: #B0D9B2;
 
 // grey color

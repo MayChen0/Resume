@@ -1,3 +1,4 @@
+@import "./_variable.scss";
 %navWord{
     font-size: 20px;
     text-decoration: none;
@@ -6,5 +7,31 @@
     letter-spacing:1px;
     text-align: right;
     position: relative;
+}
+
+%font-title{
+    
+        font-size: $font-size-h1-40 ;
+        font-weight: 400;
+        letter-spacing: 12.48px;
+        line-height: normal;
+        color: $color-grey-scale;
+}
+
+%font-button{
+    font-size: $font-size-h5-20 ;
+        font-weight: 400;
+        line-height: normal;
+        color: $color-grey-scale;
+
+}
+
+%font-body{
+    font-size: $font-size-body-16;
+    font-weight: 400;
+    margin: 5px;
+    color: $color-grey-scale;
+    line-height: 140%;
+    letter-spacing: .5px;
 }
     
