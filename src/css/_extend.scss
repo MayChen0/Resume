@@ -34,4 +34,20 @@
     line-height: 140%;
     letter-spacing: .5px;
 }
+
+%font-content{
+    font-size: $font-size-subtitle;
+    font-weight: 300;
+    color: $color-white;
+    line-height: 150%;
+    letter-spacing: .5px;
+    text-align:justify;
+}
+
+%font-adjustTitle{
+    font-weight: 400;
+    color: $color-white;
+    opacity: 0;
+    
+}
     
