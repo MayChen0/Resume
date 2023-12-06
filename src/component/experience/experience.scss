@@ -102,8 +102,10 @@
                 position: relative;
                 display: flex;
                 flex-direction: column;
+                
                 &.hidden{
                     display: none;
+                    transition: all 0.3s ease-in-out;
                 }
                 
                 &.last::before{
@@ -143,6 +145,7 @@
                     padding: 10px 20px;
                     border-radius: 7px;
                     max-width: 500px;
+                    
                     
                     
                     @include pad-md{
