@@ -48,6 +48,21 @@
     font-weight: 400;
     color: $color-white;
     opacity: 0;
+    text-align: center;
+    top: 15%;
     
 }
-    
+
+%font-workname{
+    font-size: $font-size-h1-40;
+                    font-weight: 600;
+                    letter-spacing: 5px;
+}
+
+%font-title-padsm{
+    text-shadow: none ;
+    text-align: center ;
+    color: $color-grey-scale3;
+    font-weight: 400; 
+    font-size: $font-size-h3-32 ;
+}
