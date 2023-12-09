@@ -112,6 +112,7 @@
             flex-direction: column;
             align-items: center;
             margin-bottom: 10px;
+           
 
             @include pad-lg{
                 width: 100%;
@@ -133,10 +134,7 @@
                 .title{   
                         
                     @extend %font-adjustTitle;
-                    @include pad-sm{
-                        width: 500px;
-                        
-                    }
+                    
                 }
                 a{
                     transform: translateY(30px);
@@ -153,6 +151,7 @@
                 margin-bottom: 60px;
                 justify-content: center; 
                 align-items: center;
+ 
 
                 @include pad-sm{
                     flex-direction: column;
@@ -161,7 +160,9 @@
                 }
                 
                 img{                   
-                    width: 100%;                      
+                    width: 100%;
+                    
+                                      
                 }
                 &.unicharm{
                     transform: translateX(-45%);
@@ -198,10 +199,15 @@
                             text-align: center;
                         }
                     }
+                    @include phone-sm{
+                        max-width: 400px;
+                    }
                 }        
                 &.yichuan{
                     max-width: 600px;
+                    
                     transform: translateX(40%);
+                    
                     .title{
                         left:-35%;
                         transform:rotate(0.75turn);
@@ -220,6 +226,7 @@
                     @include pad-lg{
                         max-width: 500px;
                         transform: translateX(15%);
+                        
                         .title{
                             transform:rotate(0turn);
                             left: -80px;;
@@ -227,6 +234,9 @@
                             text-shadow: $shadow-title;
 
                         }
+                    }
+                    @include phone-sm{
+                        max-width: 400px;
                     }
                 }
 
@@ -242,7 +252,8 @@
                     @include pc-sm{
                         max-width: 300px;  
                         }
-                    @include pad-lg{                          
+                    @include pad-lg{ 
+                        max-width: 400px;                          
                             .title{
                             left: -180px;;
                             
@@ -293,6 +304,9 @@
                         max-width: 550px;
                         transform: translateX(-5%);
                     }
+                    @include phone-sm{
+                        max-width: 400px;
+                    }
  }
                 &.break {
                     max-width: 600px;
@@ -306,6 +320,9 @@
                     @include pad-lg{
                         max-width: 450px;
                         transform: translateX(20%);
+                    }
+                    @include phone-sm{
+                        max-width: 400px;
                     }
                 }
                 &.flipped {
@@ -379,8 +396,16 @@
                         font-size: $font-size-h3-32 !important;
                         transform: translate(0,0) !important;
                         opacity: 1 !important;
+                        width: 500px !important;
                         
                     }
+                    @include phone-md{
+                        width: 400px !important;
+                    }
+                    // @include phone-sm{
+                    //     width: 500px !important;
+                    // }
+
 
                 }
 
