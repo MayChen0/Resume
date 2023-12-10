@@ -7,6 +7,7 @@
     flex-direction: column;
     margin-top: 120px;
     width: 100%;
+    margin-bottom: 200px;
     &__title{
         margin: 0 auto;
         & h1{
@@ -252,7 +253,7 @@
                     @include pc-sm{
                         max-width: 300px;  
                         }
-                    @include pad-lg{ 
+                    @include pad-sm{ 
                         max-width: 400px;                          
                             .title{
                             left: -180px;;
@@ -374,9 +375,6 @@
                     }
                     
                 }
-
-
-
                 .title{
                     position: absolute; 
                     font-size: $font-size-h1-40;
@@ -402,20 +400,12 @@
                     @include phone-md{
                         width: 400px !important;
                     }
-                    // @include phone-sm{
-                    //     width: 500px !important;
-                    // }
-
-
                 }
 
 
                 &:hover .title{
                             opacity: 1; 
                         }
-                        
-                    
-                
                 &:hover .work__section__container__box__text{
                     opacity: 1;   
                 }

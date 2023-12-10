@@ -1,0 +1,47 @@
+@import '../../css/_variable';
+@import '../../css/_mixin';
+@import '../../css/_extend';
+
+.contact{    
+    height: 33vh;
+    background-color: $color-mainGreen;
+    box-shadow: $shadow-contact;
+    
+    color: $color-white;
+    
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px auto 50px;
+        
+        p{
+            margin: 5px auto;
+           font-size: $font-size-h6-16;
+           font-weight: 400;
+        }
+
+        &__icon{
+            display: flex;
+ 
+            &__link{
+             display: flex;
+             flex-direction: column;
+             margin: 13px 20px 3px;
+             align-items: center;
+             position: relative;
+
+             a{
+                 width: 50px;
+                 height: 50px;
+                 
+                 &:hover{
+                    filter: drop-shadow($hoverShadow);
+                 }
+             }
+
+
+         }
+     }
+ }
+}
