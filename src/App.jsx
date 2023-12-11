@@ -6,13 +6,36 @@ import Work from "./component/work";
 import "./App.scss";
 import Contact from "./component/contact";
 
+function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
+
 const Resume = () => {
   return (
     <div className="resume">
       <Navbar className="resume__navbar" />
       <Intro className="resume__intro" />
-      <Experience className="resume__experience" />
-      <Work className="resume__experience" />
+      <FadeInSection>
+        <Experience className="resume__experience" />
+      </FadeInSection>
+      <FadeInSection>
+        <Work className="resume__work" />
+      </FadeInSection>
       <Contact className="resume__contact" />
     </div>
   );

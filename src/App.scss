@@ -7,4 +7,18 @@
     position: fixed;
    
   }
+
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(12vh);
+    visibility: hidden;
+    transition: opacity 0.8s ease-out, transform 1.5s ease-out;
+    will-change: opacity, visibility;
+    margin-top: 30px;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
 }
