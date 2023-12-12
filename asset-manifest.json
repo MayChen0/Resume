@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Resume/static/css/main.d8a9626a.css",
-    "main.js": "/Resume/static/js/main.ac7a8351.js",
+    "main.css": "/Resume/static/css/main.d1827a73.css",
+    "main.js": "/Resume/static/js/main.6b54edda.js",
     "static/js/787.dc9ee2bf.chunk.js": "/Resume/static/js/787.dc9ee2bf.chunk.js",
     "static/media/yichuan.png": "/Resume/static/media/yichuan.b9f841f20fae54b9e068.png",
     "static/media/unicharm@2x.png": "/Resume/static/media/unicharm@2x.9db619a3f17c7b4d6fc4.png",
@@ -35,17 +35,17 @@
     "static/media/poster.png": "/Resume/static/media/poster.4be84f649f31bdbf5e0f.png",
     "static/media/lightwhisper.png": "/Resume/static/media/lightwhisper.523e51142c095e12ac0b.png",
     "static/media/deepwave.png": "/Resume/static/media/deepwave.defb9633bfed3d71d0bd.png",
-    "static/media/issuuicon.svg": "/Resume/static/media/issuuicon.0f4e07329449e7a1f5f0a6042f66c2e2.svg",
-    "static/media/mailicon.svg": "/Resume/static/media/mailicon.b6a47675f5009c9b5a8544e671b31ab5.svg",
-    "static/media/linkedinicon.svg": "/Resume/static/media/linkedinicon.40127cf317da4ce4fd6a0e49d68a487a.svg",
+    "static/media/issuuicon.svg": "/Resume/static/media/issuuicon.ce77e6a62e72bf37ba9191accf021e92.svg",
+    "static/media/mailicon.svg": "/Resume/static/media/mailicon.97d69994f301a07c01ab9b40079359b9.svg",
+    "static/media/linkedinicon.svg": "/Resume/static/media/linkedinicon.2a311dd3450ee09ad856045097b71b57.svg",
     "index.html": "/Resume/index.html",
-    "static/media/downloadIcon.svg": "/Resume/static/media/downloadIcon.fceefa4231732de2b67fb00d21454046.svg",
-    "main.d8a9626a.css.map": "/Resume/static/css/main.d8a9626a.css.map",
-    "main.ac7a8351.js.map": "/Resume/static/js/main.ac7a8351.js.map",
+    "static/media/downloadIcon.svg": "/Resume/static/media/downloadIcon.59590e0fe94a17d1e88d4d064a655c8a.svg",
+    "main.d1827a73.css.map": "/Resume/static/css/main.d1827a73.css.map",
+    "main.6b54edda.js.map": "/Resume/static/js/main.6b54edda.js.map",
     "787.dc9ee2bf.chunk.js.map": "/Resume/static/js/787.dc9ee2bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8a9626a.css",
-    "static/js/main.ac7a8351.js"
+    "static/css/main.d1827a73.css",
+    "static/js/main.6b54edda.js"
   ]
 }
