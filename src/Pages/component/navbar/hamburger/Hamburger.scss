@@ -1,5 +1,5 @@
-@import '../../css/_variable';
-@import '../../css/_mixin';
+@import '../../../../css/_variable';
+@import '../../../../css/_mixin';
 
 $height: 2px;
 $transition-duration: 0.2s;
@@ -9,9 +9,9 @@ $transition-duration: 0.2s;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
-  width: 44px;
-  height: 38px;
+  padding: 12px;
+  width: 32px;
+  height: 21px;
   cursor: pointer;
   -webkit-touch-callout: none;
 
@@ -26,7 +26,7 @@ $transition-duration: 0.2s;
     &__container {
       width: 100%;
       height: $height;
-      background-color: $color-white;
+      background-color: #fff;
       transition: background-color $transition-duration ease-in-out;
 
       &:before,
@@ -36,7 +36,7 @@ $transition-duration: 0.2s;
         display: flex;
         width: 100%;
         height: $height;
-        background-color: $color-white;
+        background-color: #fff;
         left: 0;
         transition: transform $transition-duration ease-in-out,
           top $transition-duration ease-in-out;
@@ -47,7 +47,8 @@ $transition-duration: 0.2s;
       }
 
       &:after {
-        top: calc(100% - $height);
+        
+        bottom: 0;
       }
     }
   }

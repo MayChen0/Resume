@@ -1,8 +1,8 @@
 import React from "react";
 import "./contact.scss";
-import { ReactComponent as IssuuIcon } from "../../assets/image/issuuicon.svg";
-import { ReactComponent as LinkedinIcon } from "../../assets/image/linkedinicon.svg";
-import { ReactComponent as MailIcon } from "../../assets/image/mailicon.svg";
+import { ReactComponent as IssuuIcon } from "../../../assets/image/issuuicon.svg";
+import { ReactComponent as LinkedinIcon } from "../../../assets/image/linkedinicon.svg";
+import { ReactComponent as MailIcon } from "../../../assets/image/mailicon.svg";
 
 const Contact = () => {
   return (

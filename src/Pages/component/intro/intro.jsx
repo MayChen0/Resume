@@ -1,8 +1,8 @@
 import React from "react";
-import ProfilePicture from "../../assets/image/profilePicture.jpg";
-import ProfilePicturePad from "../../assets/image/profilePicture-lg.jpg";
-import CV from "../../assets/document/CV.pdf";
-import { ReactComponent as DownloadIcon } from "../../assets/image/downloadIcon.svg";
+import ProfilePicture from "../../../assets/image/profilePicture.jpg";
+import ProfilePicturePad from "../../../assets/image/profilePicture-lg.jpg";
+import CV from "../../../assets/document/CV.pdf";
+import { ReactComponent as DownloadIcon } from "../../../assets/image/downloadIcon.svg";
 import "./intro.scss";
 const Intro = () => {
   return (
