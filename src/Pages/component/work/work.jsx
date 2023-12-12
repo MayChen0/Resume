@@ -9,13 +9,13 @@ const categories = [
   { key: "poster", label: "GRAPHIC DESIGN" },
 ];
 
-const WorkItem = ({ title, content, src, srcSet, classname }) => (
+const WorkItem = ({ title, content, src, srcSet, classname, link }) => (
   <div className={`work__section__container__box ${classname} `}>
     <h3 className="title">{title}</h3>
     <img src={src} srcSet={srcSet} alt={title} />
     <div className={`work__section__container__box__text `}>
       <p className="content">{content}</p>
-      <a href="#">View Project</a>
+      <a href={link}>View Project</a>
     </div>
   </div>
 );
@@ -40,6 +40,7 @@ const Work = () => {
         src={item.src}
         srcSet={item.srcSet}
         category={item.category}
+        link={item.link}
       />
     ));
 
