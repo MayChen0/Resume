@@ -137,7 +137,7 @@
                     @extend %font-adjustTitle;
                     
                 }
-                a{
+                .link{
                     transform: translateY(30px);
                     @include pad-sm{
                         transform: translateY(-15px);
@@ -452,7 +452,7 @@
                         }   
                     }
 
-                    a{  @extend %font-content;
+                    .link{  @extend %font-content;
                         text-decoration: none;
                         font-weight: 400;
                         padding: 3px 8px;

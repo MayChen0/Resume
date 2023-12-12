@@ -1,6 +1,7 @@
 import React from "react";
 import "./work.scss";
 import WorkList from "./worklist";
+import { Link } from "react-router-dom";
 
 const categories = [
   { key: "product", label: "PRODUCT DESIGN" },
@@ -15,7 +16,9 @@ const WorkItem = ({ title, content, src, srcSet, classname, link }) => (
     <img src={src} srcSet={srcSet} alt={title} />
     <div className={`work__section__container__box__text `}>
       <p className="content">{content}</p>
-      <a href={link}>View Project</a>
+      <Link className="link" to={link}>
+        View Project
+      </Link>
     </div>
   </div>
 );
