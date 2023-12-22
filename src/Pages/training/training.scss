@@ -1,0 +1,115 @@
+@import '../../css/_variable';
+@import '../../css/_mixin';
+@import '../../css/_extend';
+
+.training{
+
+    &__container{
+        margin: 40px 250px 0 180px;
+        display: flex;
+        flex-direction: column;
+        @include pc-sm{
+            margin: 40px 200px 0 130px;
+        }
+        @include pad-lg{
+            margin: 40px 200px 0 100px;
+        }
+        @include pad-sm{
+            margin: 45px 60px 0;
+        }
+        @include phone-md{
+            margin: 45px 25px 0;
+        }
+         
+        &__title{
+            & h1{
+                text-align: center;
+                line-height: 172%;
+                @extend %font-title;
+                @include pc-sm{
+                    font-size: $font-size-h2-36 ;
+                    letter-spacing: 10px;
+                }
+                @include pad-sm{
+                    
+                    letter-spacing: 8px;
+                    line-height: 150%;
+                }
+                @include phone-md{
+                    letter-spacing: 5px;
+                    line-height: 130%;
+                }
+            }
+        }
+        &__image{  
+           margin: 10px auto 30px;         
+            img{
+                width: 100%;     
+            }
+            &.introduce{
+                max-width: 600px;
+            }
+            &.method{
+                max-width: 700px;
+            }
+            &.researchflow{
+                max-width: 500px;
+                @include pad-sm{
+                    width: 100%;
+                }
+            }
+            &.observation{
+                max-width: 400px;
+            }
+            &.functionflow{
+                width: 80%;
+                @include pad-sm{
+                    width: 100%;
+                }
+            }
+            &.wireframe1,&.wireframe2{
+                max-width: 400px;
+            }
+            &.mockup{
+                width: 90%;
+                @include pad-sm{
+                    width: 100%;
+                }
+            }
+        }
+        &__wireframebox{
+            display: flex;
+            flex-direction: row;
+            @include pad-sm{
+                flex-direction: column;
+            }
+        }
+
+        &__context{
+           
+            text-align: justify; 
+            p{   @extend %font-body;
+                margin: 0 0 35px;
+            }
+        }
+        h3{
+            font-size: $font-size-h3-32;
+            font-weight: 500;
+            margin: 15px 0 30px;
+            color: $color-grey-scale3;
+            @include phone-md{
+                font-size: $font-size-h4-24;
+            }
+        }
+        h4{
+            font-size: $font-size-h4-24;
+            font-weight: 500;
+            margin: 15px 0 20px;
+            color: $color-grey-scale4;
+            @include phone-md{
+                font-size: $font-size-h5-20;
+            }
+        }
+    }
+
+}
