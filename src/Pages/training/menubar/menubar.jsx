@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as Link2, animateScroll as scroll } from "react-scroll";
+import { ReactComponent as BackIcon } from "../../../assets/image/backicon.svg";
+import { Link as Link1 } from "react-router-dom";
 import "./menubar.scss";
 
 const Menubar = () => {
@@ -36,18 +38,25 @@ const Menubar = () => {
   return (
     <div className="menubar">
       <nav className="menubar__nav">
-        <Link to="top" smooth={true} onClick={() => scrollToSection("top")}>
+        <Link2
+          className="menubar__nav__top"
+          to="top"
+          smooth={true}
+          onClick={() => scrollToSection("top")}
+        >
           TOP
-        </Link>
-        <Link
+        </Link2>
+        <Link2
+          className="menubar__nav__method"
           to="method"
           smooth={true}
           offset={offset}
           onClick={() => scrollToSection("method")}
         >
           METHOD
-        </Link>
-        <Link
+        </Link2>
+        <Link2
+          className="menubar__nav__research"
           to="research"
           smooth={true}
           offset={offset}
@@ -56,24 +65,39 @@ const Menubar = () => {
           METHOD
         >
           RESEARCH
-        </Link>
-        <Link
+        </Link2>
+        <Link2
+          className="menubar__nav__design"
           to="design"
           smooth={true}
           offset={offset}
           onClick={() => scrollToSection("design")}
         >
           DESIGN
-        </Link>
-        <Link
+        </Link2>
+        <Link2
+          className="menubar__nav__prototype"
           to="prototype"
           smooth={true}
           offset={offset}
           onClick={() => scrollToSection("prototype")}
         >
           PROTOTYPE
-        </Link>
+        </Link2>
+        <Link2
+          className="menubar__nav__end"
+          to="end"
+          smooth={true}
+          offset={offset}
+          onClick={() => scrollToSection("end")}
+        >
+          PRODUCT
+        </Link2>
       </nav>
+      <Link1 className="menubar__home" to="/Resume">
+        <p>HOME</p>
+        <BackIcon className="menubar__home__icon" />
+      </Link1>
     </div>
   );
 };

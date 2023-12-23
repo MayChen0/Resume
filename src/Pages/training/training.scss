@@ -76,6 +76,18 @@
                     width: 100%;
                 }
             }
+            &.expert{
+                width: 90%;
+                @include pad-sm{
+                    width: 100%;
+                }
+            }
+            &.users{
+                width: 90%;
+                @include pad-sm{
+                    width: 90%;
+                }
+            }
         }
         &__wireframebox{
             display: flex;
@@ -84,12 +96,44 @@
                 flex-direction: column;
             }
         }
+        &__video{
+            width: 600px;
+            align-self: center;
+            @include pc-sm{
+                width: 80%;
+            }
+            @include pad-sm{
+                width: 90%;
+            }
+            @include phone-md{
+                width: 100%;
+            }
+            &__box{
+
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-bottom: 64.5%;
+                
+                margin-bottom: 200px;
+                iframe{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
 
         &__context{
            
             text-align: justify; 
             p{   @extend %font-body;
                 margin: 0 0 35px;
+                @include pad-sm{
+                    font-size: $font-size-body-sm;
+                }
             }
         }
         h3{

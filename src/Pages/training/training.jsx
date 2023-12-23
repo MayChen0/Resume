@@ -75,8 +75,23 @@ const Training = () => {
         <Context contextKey="prototype" />
         <h4>Expert Evaluation</h4>
         <Context contextKey="expertevaluation" />
+        <Image imageKey="expert" />
         <h4>User Testing</h4>
         <Context contextKey="usertesting" />
+        <Image imageKey="users" />
+        <h3 id="end">End Product</h3>
+        <Context contextKey="end" />
+        <div className="training__container__video">
+          <div className="training__container__video__box">
+            <iframe
+              src="https://www.youtube.com/embed/h3qfNsdaxrM"
+              title="Offshore Wind Turbine Maintenance Training Game"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );

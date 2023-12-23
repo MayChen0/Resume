@@ -37,6 +37,9 @@ const TrainingContext = [
     },{
         key:"usertesting",
         string:"We used the think-aloud method for user testing. During the process, participants were guided to speak out their thoughts when they were using the prototype. The user's interactions would be recorded through video for subsequent playback and data analysis.",
+    },{
+        key:"end",
+        string:"After multiple iterations and modifications, validated through user testing results and expert certification, we have produced the prototype of the game's structure and interface. This forms the foundation for the game's further development.",
     },
 ]
 

@@ -20,6 +20,14 @@ import TrainingImage_Mockup from "../../assets/image/mockup.png";
 import TrainingImage_Mockup_2x from "../../assets/image/mockup@2x.png";
 import TrainingImage_MockupStraight from "../../assets/image/mockupstraight.png";
 import TrainingImage_MockupStraight_2x from "../../assets/image/mockupstraight@2x.png";
+import TrainingImage_Expert from "../../assets/image/expert.png";
+import TrainingImage_Expert_2x from "../../assets/image/expert@2x.png";
+import TrainingImage_ExpertStraight from "../../assets/image/expertstraight.png";
+import TrainingImage_ExpertStraight_2x from "../../assets/image/expertstraight@2x.png";
+import TrainingImage_Users from "../../assets/image/users.png";
+import TrainingImage_Users_2x from "../../assets/image/users@2x.png";
+import TrainingImage_UsersStraight from "../../assets/image/usersstraight.png";
+import TrainingImage_UsersStraight_2x from "../../assets/image/usersstraight@2x.png";
 
 const TrainingImages = [
     {
@@ -67,6 +75,18 @@ const TrainingImages = [
         srcSet:`${TrainingImage_Mockup} 1x,${TrainingImage_Mockup_2x} 2x`,
         srcSetStraight:`${TrainingImage_MockupStraight} 1x,${TrainingImage_MockupStraight_2x} 2x`,
         alt:"Mockup",
+    },{
+        key:"expert",
+        src:TrainingImage_Expert,
+        srcSet:`${TrainingImage_Expert} 1x,${TrainingImage_Expert_2x} 2x`,
+        srcSetStraight:`${TrainingImage_ExpertStraight} 1x,${TrainingImage_ExpertStraight_2x} 2x`,
+        alt:"Expert",
+    },{
+        key:"users",
+        src:TrainingImage_Users,
+        srcSet:`${TrainingImage_Users} 1x,${TrainingImage_Users_2x} 2x`,
+        srcSetStraight:`${TrainingImage_UsersStraight} 1x,${TrainingImage_UsersStraight_2x} 2x`,
+        alt:"Users",
     },
 ]
 export default TrainingImages

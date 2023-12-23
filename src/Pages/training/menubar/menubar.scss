@@ -34,6 +34,13 @@
             
         }
 
+        &__research,&__prototype{
+            @include pad-sm {
+                display: none;
+                       
+            }
+        }
+
         a{ 
             font-size:$font-size-body-16;
             text-decoration: none;
@@ -81,5 +88,46 @@
                 }
             }   
         }
+    }
+
+    &__home{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin: 0 40px 40px 0;
+        text-decoration: none;
+        color: $color-grey-scale;
+        letter-spacing: .5px;
+        &:hover {
+            text-shadow: $hoverShadow;
+        }
+        p{
+            font-size:$font-size-body-20;
+            margin: 0;
+            @include pad-sm{
+                display: none;
+            }
+            
+        }
+        &__icon{
+            position: absolute;
+            display: none;
+            width: 13px;
+            
+            @include pad-sm{
+                display: block;
+                margin: 7px;
+            }
+            @include phone-md{
+                width: 10px;
+                margin: 12px;
+            }
+        }
+        @include pad-sm{
+            top: 0;
+            left: 0;
+            margin: 10px;
+        }
+
     }
 }
