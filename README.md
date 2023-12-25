@@ -2,9 +2,7 @@
 
 This is my resume website.
 
-GitHub Pages Link
-
-### (<https://maychen0.github.io/Resume/#/Resume> "Resume Link")
+[GitHub Pages Link](https://maychen0.github.io/Resume/#/Resume>)
 
 ## Using Skills
 
