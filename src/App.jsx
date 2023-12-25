@@ -6,7 +6,7 @@ import Resume from "./Pages/Resume";
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <HashRouter>
       <Routes>
         <Route index element={<Resume />} path={"/Resume"}></Route>
         <Route element={<Training />} path={"/Training"}></Route>

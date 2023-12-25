@@ -23,7 +23,7 @@ $imgWidth-horizonal-sm:530px;
         margin: 45px 50px 0;
     }
     @include phone-md{
-        margin: 45px 20px 0;
+        margin: 0px 20px 0;
     }
     &__profilepicture{
         display: flex;
@@ -38,7 +38,7 @@ $imgWidth-horizonal-sm:530px;
             
         }
         @include pad-sm{
-            margin-top: 50px;
+            margin-top: 45px;
         }
         &::before{  
             position: absolute;  
@@ -117,11 +117,18 @@ $imgWidth-horizonal-sm:530px;
 
         p{
             font-size:$font-size-body-16;
+            line-height: 150%;
+            text-align: justify;
             @include pad-lg{
-                padding: 0 20px;
+                padding: 0 10px;
+                
             } 
+            @include phone-md{
+                font-size: $font-size-body-sm;
+            }
         }
         &__cvDownloadContainer{
+            margin-top: 5px;
             display: flex;
             justify-content: end;
         }

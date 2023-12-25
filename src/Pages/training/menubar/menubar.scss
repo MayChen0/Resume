@@ -98,6 +98,7 @@
         text-decoration: none;
         color: $color-grey-scale;
         letter-spacing: .5px;
+        
         &:hover {
             text-shadow: $hoverShadow;
         }
@@ -120,13 +121,16 @@
             }
             @include phone-md{
                 width: 10px;
-                margin: 12px;
+                margin: 22px 22px;
             }
         }
         @include pad-sm{
-            top: 0;
-            left: 0;
-            margin: 10px;
+            top: 0px;
+            left: 0px;
+            margin: 0;
+            
+            width: 60px;
+            height: 60px;
         }
 
     }

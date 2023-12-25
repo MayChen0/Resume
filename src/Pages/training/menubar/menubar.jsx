@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import { Link as Link2, animateScroll as scroll } from "react-scroll";
 import { ReactComponent as BackIcon } from "../../../assets/image/backicon.svg";
 import { Link as Link1 } from "react-router-dom";
@@ -13,7 +13,7 @@ const Menubar = () => {
     setOffset(screenWidth <= 960 ? -90 : -45);
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.addEventListener("resize", handleResize);
 
     return () => {

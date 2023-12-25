@@ -21,10 +21,12 @@ const Intro = () => {
         <h2>Hello,</h2>
         <h2>I am May Chen</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptas,
-          ea illum illo aliquam neque aliquid magnam, odio impedit sunt
-          consectetur a cumque fuga incidunt rem laborum, excepturi pariatur
-          saepe.
+          I bring hands-on experience in front-end engineering complemented by a
+          strong design foundation. Proficient in interdisciplinary
+          communication, I proactively seek opportunities for continuous
+          learning. I firmly believe that collaboration with individuals from
+          diverse backgrounds has the potential to spark innovation and achieve
+          truly unique accomplishments.
         </p>
         <div className="intro__text__cvDownloadContainer">
           <div className="intro__text__cvDownloadLink">

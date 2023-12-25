@@ -8,6 +8,9 @@
     margin-top: 120px;
     width: 100%;
     margin-bottom: 200px;
+    @include pad-sm{
+        margin-bottom: 50px;
+    }
     &__title{
         margin: 0 auto;
         & h1{
@@ -503,6 +506,8 @@
                             border:0;
                             margin: 5px auto ;
                             margin-right: 0;
+                            background-color: $color-grey-scale11;
+                            box-shadow: $hoverShadow;
                         }
 
                         &:hover{

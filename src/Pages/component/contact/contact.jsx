@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.scss";
-import { ReactComponent as IssuuIcon } from "../../../assets/image/issuuicon.svg";
+import { ReactComponent as BehanceIcon } from "../../../assets/image/behanceicon.svg";
 import { ReactComponent as LinkedinIcon } from "../../../assets/image/linkedinicon.svg";
 import { ReactComponent as MailIcon } from "../../../assets/image/mailicon.svg";
 
@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="contact__container__icon">
           <div className="contact__container__icon__link">
             <a href="#">
-              <IssuuIcon />
+              <BehanceIcon />
             </a>
             <p>portfolio</p>
           </div>
