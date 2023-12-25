@@ -2,7 +2,7 @@
 
 This is my resume website.
 
-[GitHub Pages Link](https://maychen0.github.io/Resume/#/Resume>)
+[GitHub Pages Link](https://maychen0.github.io/Resume/#/Resume)
 
 ## Using Skills
 
