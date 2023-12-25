@@ -2,6 +2,10 @@
 
 This is my resume website.
 
+GitHub Pages Link
+
+### (<https://maychen0.github.io/Resume/#/Resume> "Resume Link")
+
 ## Using Skills
 
 <h3 align="left">Languages and Tools:</h3>
