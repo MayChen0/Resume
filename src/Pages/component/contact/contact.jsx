@@ -18,7 +18,7 @@ const Contact = () => {
             <p>portfolio</p>
           </div>
           <div className="contact__container__icon__link">
-            <a href="#">
+            <a href="www.linkedin.com/in/昕玫-陳-771a41191">
               <LinkedinIcon />
             </a>
             <p>Linkedin</p>
